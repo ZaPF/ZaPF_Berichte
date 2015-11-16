@@ -3,6 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 
+\usepackage{geometry}
 \usepackage{fixltx2e}
 \usepackage{ellipsis}
 \usepackage[tracking=true]{microtype}
@@ -20,23 +21,25 @@
 \usepackage{hyperref}
 \hypersetup{
       colorlinks=true,
-        linkcolor=black,        % Farbe der internen Links (u.a. Table of Contents)
-          urlcolor=urlred}        % Farbe der url-links
-          \parindent 0pt                                 % Absatzeinrücken verhindern
-          \parskip 12pt                                 % Absätze durch Lücke trennen
-          \makeatletter
-          \g@addto@macro{\@afterheading}{\vspace{-\parskip}}  % Verhindert die zusätzlichen 12pt parskip nach sections
-          \makeatother
+      linkcolor=black,        % Farbe der internen Links (u.a. Table of Contents)
+      urlcolor=urlred}        % Farbe der url-links
+\parindent 0pt                                 % Absatzeinrücken verhindern
+\parskip 12pt                                 % Absätze durch Lücke trennen
+\makeatletter
+\g@addto@macro{\@afterheading}{\vspace{-\parskip}}  % Verhindert die zusätzlichen 12pt parskip nach sections
+\makeatother
 
-          \setlength{\textheight}{23cm}
+\setlength{\textheight}{23.5cm}
+\geometry{top=2.5cm}
 
-          \usepackage{fancyhdr}
-          \pagestyle{fancy}
-          \cfoot{}
-          \lfoot{Zusammenkunft aller Physik-Fachschaften}
-          \rfoot{\href{http://www.zapfev.de}{\url{http://www.zapfev.de}}\\\href{mailto:stapf@googlegroups.de}{\url{stapf@googlegroups.de}}}
-          \renewcommand{\headrulewidth}{0pt}
-          \renewcommand{\footrulewidth}{0.1pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{\href{http://www.zapfev.de}{\url{http://www.zapfev.de}}\\\href{mailto:stapf@googlegroups.de}{\url{stapf@googlegroups.de}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
 
 \begin{document}
 \hspace{0.74\textwidth}
@@ -110,7 +113,7 @@ Eine Einladung wurde formuliert und verschickt.
 \section*{Beschränkung des Eduroam-Netzes}
 
 Gemeinsam mit KIF und KoMa wurde eine Resolution zum hochschulübergreifenden
-Eduroam-Netz verabschiedet.
+Eduroam-Netz verabschiedet.\footnote{\href{https://vmp.ethz.ch/zapfwiki/images/2/27/Resolution\_SoSe15\_Netzneutralit\%C3\%A4t\_in\_Universit\%C3\%A4tsnetzen.pdf}{Resolution zur qualitativen Umsetzung von eduroam und anderen hochschulöffentlichen Netzwerken an allen Hochschulen}}
 
 Immer wieder berichten Fachschaften von Beschränkungen des Eduroam-Netzes, die
 die übergreifenden Vorgaben verletzen. Die verabschiedete Resolution schafft 
@@ -126,7 +129,7 @@ oft auch in der Mensa zahlen, Bücher ausleihen oder sonstige Dienste nutzen
 kann.
 
 Die Zapf hat sich mit dem Thema kritisch auseinandergesetzt und dabei in ihrer
-Resolution die wichtigsten Punkte zusammengestellt, die bei einer
+Resolution\footnote{\href{https://vmp.ethz.ch/zapfwiki/images/4/4a/Resolution\_SoSe15\_Umsetzung\_von\_elektronischen\_Studierendenausweisen.pdf}{Stellungnahme zur Umsetzung von elektronischen Studierendenausweisen}} die wichtigsten Punkte zusammengestellt, die bei einer
 Einführung oder dem Betrieb solcher Chipkarten zu beachten sind.
 
 Dabei spricht sich die Zapf u.a.\ dafür aus, dass auf den Chipkarten nur die
@@ -135,7 +138,7 @@ gespeichert werden.
 
 \section*{Mathematische Vorkenntnisse}
 
-Andreas Borowski\footnote{\href{http://www.uni-potsdam.de/u/physik/didaktik/homepage/mik1.htm/?article_id=68}{\url{http://www.uni-potsdam.de/u/physik/didaktik/homepage/mik1.htm/?article_id=68}}},
+Andreas Borowski\footnote{\href{http://www.uni-potsdam.de/u/physik/didaktik/homepage/mik1.htm/?article\_id=68}{\url{http://www.uni-potsdam.de/u/physik/didaktik/homepage/mik1.htm/?article\_id=68}}},
 Professor für Didaktik der Physik aus Potsdam, hat eine Studie zur Physikkompetenz
 in der Sekundarstufe II (DFG Projekt) und in der Studieneingangsphase
 (gefördert von der Heraeus-Stiftung) sowie zur mathematischen Kompetenz in
@@ -149,7 +152,7 @@ Entschuldigung für Nichterscheinen bei Klausuren akzeptieren,
 sondern vermehrt nach den gesundheitlichen Gründen, die dahinterstehen, fragen.
 Die ZaPF und KOMA sehen dies als einen starken Eingriff in die Privatsphäre, und
 sprechen sich deswegen dafür aus, dass eine Arbeitsunfähigkeitsbescheinigung
-ausreichen muss.
+ausreichen muss.\footnote{\href{https://vmp.ethz.ch/zapfwiki/images/c/cd/Positionspapier\_SoSe15\_Ruecktritt\_von\_Pruefungen.pdf}{Positionspapier zum Rücktritt von Prüfungen}}
 
 \section*{Lehramt in Baden-Württemberg}
 
@@ -181,7 +184,7 @@ begleitende Übungszettel und Übungsgruppen vermittelt.
 Dieses Konzept hat sich in seiner Gesamtheit oft bewährt, jedoch hängt dessen Qualität stark von der Umsetzung an den unterschiedlichen Universitäten ab. Um den Dozenten hier zur Hand zu gehen und ihnen die Konzeption und
 Umsetzung des Übungsbetriebes zu erleichtern, hat die ZaPF in Aachen, in
 Zusammenarbeit mit der KoMa, ein Positionspapier mit Empfehlungen
-für einen guten Übungsbetrieb beschlossen.
+für einen guten Übungsbetrieb beschlossen.\footnote{\href{https://vmp.ethz.ch/zapfwiki/images/0/03/Positionspapier\_SoSe15\_Uebungskonzepte.pdf}{Empfehlungen für einen guten Übungsbetrieb}}
 
 \section*{Projekt fächerübergreifender Studienführer }
 
