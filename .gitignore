@@ -2,4 +2,5 @@
 *.log
 *.out
 *.swp
+**/Thumbs.db
 auto/
