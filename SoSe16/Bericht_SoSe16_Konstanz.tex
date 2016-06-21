@@ -17,16 +17,19 @@
 \usepackage{paralist}
 \usepackage{url}
 \usepackage{xcolor}
-\definecolor{urlred}{HTML}{660000} 
+\definecolor{urlred}{HTML}{660000}
 \usepackage{hyperref}
 \hypersetup{
-      colorlinks=true,
-      linkcolor=black,                              % Farbe der internen Links (u.a. Table of Contents)
-      urlcolor=urlred}                              % Farbe der url-links
+	colorlinks=true,
+	linkcolor=black,                              % Farbe der internen Links 
+	%(u.a. Table of Contents)
+	urlcolor=urlred}                              % Farbe der url-links
 \parindent 0pt                                      % Absatzeinrücken verhindern
-\parskip 12pt                                       % Absätze durch Lücke trennen
+\parskip 12pt                                       % Absätze durch Lücke 
+%trennen
 \makeatletter
-\g@addto@macro{\@afterheading}{\vspace{-\parskip}}  % Verhindert die zusätzlichen 12pt parskip nach sections
+\g@addto@macro{\@afterheading}{\vspace{-\parskip}}  % Verhindert die 
+%zusätzlichen 12pt parskip nach sections
 \makeatother
 
 \setlength{\textheight}{23.5cm}
@@ -42,21 +45,20 @@
 
 
 \begin{document}
-\hspace{0.74\textwidth}
-\begin{minipage}{0.25\textwidth}
-      \vspace{-1cm}
-      \centering
-      \includegraphics[width=.89\textwidth]{logo.pdf}
-      \small Zusammenkunft aller Physik-Fachschaften
-\end{minipage}
-
-\begin{center}
-      \vspace{1.5cm}
-      \huge{Bericht von der ZaPF in Konstanz \\ Sommer 2016}
-      \vspace{1cm}
-\end{center}
-
-\input{bericht_data}
-
+	\hspace{0.74\textwidth}
+	\begin{minipage}{0.25\textwidth}
+		\vspace{-1cm}
+		\centering
+		\includegraphics[width=.89\textwidth]{logo.pdf}
+		\small Zusammenkunft aller Physik-Fachschaften
+	\end{minipage}
+	
+	\begin{center}
+		\vspace{1.5cm}
+		\huge{Bericht von der ZaPF Konstanz \\ Sommer 2016}
+		\vspace{1cm}
+	\end{center}
+	
+	\input{bericht_data}
+	
 \end{document}
-
