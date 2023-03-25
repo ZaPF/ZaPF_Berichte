@@ -1,0 +1,93 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{geometry}
+\usepackage{fixltx2e}
+\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+\usepackage{lmodern}
+\usepackage{hfoldsty}
+\usepackage{fourier}                         % Schriftart
+\usepackage[scaled=0.81]{helvet}             % Schriftart
+\usepackage[osf,sc]{mathpazo}
+\usepackage{graphicx}
+\usepackage{setspace}                        % Zeilenabstand
+\usepackage{paralist}
+\usepackage{url}
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+\usepackage{hyperref}
+\hypersetup{
+      colorlinks=true,
+      linkcolor=black,                              % Farbe der internen Links (u.a. Table of Contents)
+      urlcolor=urlred}                              % Farbe der url-links
+\parindent 0pt                                      % Absatzeinrücken verhindern
+\parskip 12pt                                       % Absätze durch Lücke trennen
+\makeatletter
+\g@addto@macro{\@afterheading}{\vspace{-\parskip}}  % Verhindert die zusätzlichen 12pt parskip nach sections
+\makeatother
+
+\setlength{\textheight}{23.5cm}
+\geometry{top=2.5cm,left=2.4cm,right=2.6cm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{\href{http://www.zapfev.de}{\url{http://www.zapfev.de}}\\\href{mailto:stapf@zapf.in}{\url{stapf@zapf.in}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+\makeatletter
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+
+\begin{document}
+\hspace{0.74\textwidth}
+\begin{minipage}{0.25\textwidth}
+      \vspace{-1cm}
+      \centering
+      \includegraphics[width=.89\textwidth]{../logo.pdf}
+      \small Zusammenkunft aller Physik-Fachschaften
+\end{minipage}
+
+\begin{center}
+      \vspace{1.5cm}
+      \huge{Bericht von der ZaPF in Bochum \\ Sommer 2022}
+      \vspace{1cm}
+\end{center}
+
+Vom 03.-07. Juni 2022 fand die 86. ZaPF (Zusammenkunft aller Physik-Fachschaften), die Bundesfachschaftentagung der Physik statt. Die ZaPF versteht sich als meinungsäußerndes Gremium der Physikstudierenden und ermöglicht den Austausch zwischen verschiedenene Fachschaften im deutschsprachigen Raum. Bei dieser einmal im Semester stattfindenden Versammlung werden hochschulpolitische Themen und Aspekte der Fachschaftsarbeit diskutiert. Dieses Mal fand die ZaPF in Bochum statt. Außerdem konnten sich Studierende nochmals online dazuschalten. 
+
+Insgesamt waren 35 Fachschaften mit ca. 160 Teilnehmenden vertreten. Es wurden verschiedenste Themen rund um \textbf{das Physikstudium und Gremienarbeit} in mehr als 26 verschiedenen Arbeitskreisen und Workshops behandelt.
+
+Die Schwerpunkte dieser ZaPF lagen dabei vor allem auf folgenden Themen:
+\begin{itemize}
+\item BAföG \& Heizkostenpauschale
+\item Nachhaltigkeit
+\item Koalitionsverhandlungen in NRW
+\item Wissenschaftszeitvertragsgesetz
+\end{itemize}
+
+\section*{BAföG \& Heizkostenpauschale}
+Die ZaPF hat sich aufgrund der geplanten Veränderungenerneut mit der Reformierung des BAföG beschäftigt. Die geplante Anhebung der Altersgrenze und die Erhöhung der Vermögungsfreigrenze wird von der ZaPF befürwortet, jedoch wird die nach wie vor starke Bindung an das Elterneinkommen und die fehlende Anpassung an die aktuelle Inflationsrate kritisiert, weshalb in Form einer Resolution eine weitreichendere Reform gefordert wird.
+Des Weiteren hat sich die ZaPF mit den Entlastungspaketen der Bundesregierung auseinander gesetzt. Die ZaPF kritisiert, dass Studierende, welche weder  Einkommenssteuerzahlende noch BAföG-Beziehende sind, von dieser Hilfe ausgeschlossen wurden. Daher hat die ZaPF eine Resolution erarbeitet, um eine Entlastung für Studierende, welche bisher von der Unterstützung ausgeschlossen waren, zu fordern.
+
+\section*{Nachhaltigkeit}
+Aufbauend auf einige Arbeitskreise in den vergangenen Jahren beschäftigt sich die ZaPF auch dieses Jahr erneut mit diesem hochaktuellen Thema. Insbesondere strukturelle Änderungen wie die Schaffung einer Stabstelle an Hochschulen zu diesem Thema, die auch u. a. einen Klimaplan zu erstellen hat, sind der ZaPF wichtig.\\
+Zudem ist der ZaPF Transparenz ein elementarer Inhalt von einer nachhaltigen Entwicklung. Dazu werden Hochschulen aufgefordert einen Nachhaltigkeitsbericht zu erstellen, der auch veröffentlicht werden soll. Entsprechende Qualitätskriterien eines solchen Berichts sind erfasst und können in der Resolution unter LINK eingesehen werden.
+
+
+\section*{Wissenschaftszeitvertragsgesetz}
+
+Die ZaPF beschäftigt sich bereits seit längerer Zeit mit dem Wissenschaftszeitvertragsgesetz. Aufgrund der kurz nach der Tagung anstehenden Evaluationsvorstellung der Novellierung des Gesetzes hat die ZaPF eine Resolution erarbeitet, um 
+
+\section*{Koalitionsverhandlungen in NRW}
+
+Die gesammelten Stellungnahmen der ZaPF können unter \url{www.zapfev.de} eingesehen werden. Fragen und Anregungen können gerne an den Ständigen Ausschuss der Physik-Fachschaften (StAPF), das vertretende Gremium der ZaPF, geschickt werden.
+
+\section*{Ausblick}
+Die nächste ZaPF wird von der Fachschaft der Universität Hamburg ausgerichtet und findet vom 10.-13. November 2022 statt.
+
+\end{document}
