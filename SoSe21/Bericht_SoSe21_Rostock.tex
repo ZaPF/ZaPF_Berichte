@@ -1,52 +1,62 @@
-\documentclass[a4paper, 11pt]{scrartcl}
-%\documentclass[a4paper, 11pt, draft]{scrartcl}%nur Maße der Bilder werden geladen 
-\usepackage[utf8]{inputenc}%Direkteingabe Umlaute
-\usepackage[ngerman]{babel}
-\usepackage{amssymb}%Laden von Mathesymbolen
-\usepackage{amsmath}%Laden von weiteren Mathesymbolen
-\usepackage{float}%Bilder, zB platzieren
-\usepackage{esdiff}%Ableitungen ordentlich aufschreiben zB \diff{}{}
-\usepackage{makeidx}%Index usw erzeugen
-\usepackage{multicol}%Kolumne bzw Mehrspaltensatz als Layout
-\usepackage{cancel}%Durchstreichen von Formeln
-\usepackage{wrapfig}%Textumflossene Bilder
-\usepackage{microtype}%optimierte Abstände und schönere Gestaltung, sollte erst nach der Schriftart geladen werden
-\usepackage{mathtools}%zB für Boxbreite=0 bei \underbrace{•}
-\usepackage{makecell}%Für teilweise zwei Zeilen übereinander
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}%Aktuelle deutsche Silbentrennung
-\usepackage{comment}%zum Auskommentieren ganzer Blöcke \begin\end{comment}
-\usepackage{layouts}%Wird gebraucht, um \textwidth in zB cm anzugeben
-\usepackage[version=4]{mhchem}%Für chemische Gleichungen
-\usepackage{xcolor}%Für farbigen Text, z.B. \textcolor{green}{\textbf{ROT}} oder siehe Internet; eigene Farbe: \definecolor{MyBlue}{rgb}{0.9,0.9,1}
-\usepackage{hhline}%Für Doppellinien in Tabellen und anderen Kram zB  \hhline{=|=:~:=}
-\usepackage{tikz}%Zum zeichnen, es können noch Bibliotheken geladen werden, zB \usetikzlibrary{shapes,arrows}
-\usepackage{graphicx}%Zum Grafiken einfügen
-\usepackage[section]{placeins}%Um das Floaten zu begrenzen. Mit der Option [section] schonml nur auf eine \section begrenzt, \FloatBarrier stellt auch eine Begrenzung dar
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+%\usepackage{fixltx2e}
+\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+\usepackage{lmodern}
+\usepackage{hfoldsty}
+\usepackage{siunitx}
+%\usepackage{fourier}                         % Schriftart
+\usepackage[scaled=0.81]{helvet}             % Schriftart
+\usepackage[osf,sc]{mathpazo}
+\usepackage{graphicx}
+\usepackage{setspace}                        % Zeilenabstand
+\usepackage{paralist}
+\usepackage{url}
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,                              % Farbe der internen Links (u.a. Table of Contents)
+	urlcolor=urlred}                              % Farbe der url-links
+\parindent 0pt                                      % Absatzeinrücken verhindern
+\parskip 12pt                                       % Absätze durch Lücke trennen
+\makeatletter
+\g@addto@macro{\@afterheading}{\vspace{-\parskip}}  % Verhindert die zusätzlichen 12pt parskip nach sections
+\makeatother
 
-\usepackage{tikzlings}%for animal symbols
-\usepackage{tikzducks}%for animal symbols
+\setlength{\textheight}{23.5cm}
+\geometry{top=2.5cm,left=2.4cm,right=2.6cm}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{\href{http://www.zapfev.de}{\url{http://www.zapfev.de}}\\\href{mailto:stapf@zapf.in}{\url{stapf@zapf.in}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
 
-\usepackage[pdfborder={0 0 0}]{hyperref}%Querverweise erzeugen. Als letztes (außer bei geometry) laden
-
-\bibliographystyle{unsrt}
-
-\addto\captionsngerman{% Ändert figure- und tablename in ngerman zu Abb. und Tab.
-  \renewcommand{\figurename}{Abb.}%
-  \renewcommand{\tablename}{Tab.}%
-  \renewcommand{\thefootnote}{\fnsymbol{footnote}}%Symbol der Fußnoten werden geändert
-}
-
-
-\title{}
-\author{}
-\date{}
-
+\makeatletter
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
 
 \begin{document}
-
-\section*{Bericht zur digitalen Sommer-ZaPF 2021}
+	\hspace{0.74\textwidth}
+	\begin{minipage}{0.25\textwidth}
+		\vspace{-1cm}
+		\centering
+		\includegraphics[width=.89\textwidth]{logo.png}
+		\small Zusammenkunft aller Physik-Fachschaften
+	\end{minipage}
+	
+	\begin{center}
+		\vspace{1.5cm}
+		\huge{Bericht zur digitalen ZaPF \\ Sommer 2021}
+		\vspace{1cm}
+	\end{center}
 
 \subsection*{Einleitung}
 
