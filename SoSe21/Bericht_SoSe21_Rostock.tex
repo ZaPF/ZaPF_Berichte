@@ -3,11 +3,12 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage{geometry}
-\usepackage{fixltx2e}
+%\usepackage{fixltx2e}
 \usepackage{ellipsis}
 \usepackage[tracking=true]{microtype}
 \usepackage{lmodern}
 \usepackage{hfoldsty}
+\usepackage{siunitx}
 %\usepackage{fourier}                         % Schriftart
 \usepackage[scaled=0.81]{helvet}             % Schriftart
 \usepackage[osf,sc]{mathpazo}
@@ -19,9 +20,9 @@
 \definecolor{urlred}{HTML}{660000}
 \usepackage{hyperref}
 \hypersetup{
-      colorlinks=true,
-      linkcolor=black,                              % Farbe der internen Links (u.a. Table of Contents)
-      urlcolor=urlred}                              % Farbe der url-links
+	colorlinks=true,
+	linkcolor=black,                              % Farbe der internen Links (u.a. Table of Contents)
+	urlcolor=urlred}                              % Farbe der url-links
 \parindent 0pt                                      % Absatzeinrücken verhindern
 \parskip 12pt                                       % Absätze durch Lücke trennen
 \makeatletter
@@ -43,20 +44,78 @@
 \DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
 
 \begin{document}
-\hspace{0.74\textwidth}
-\begin{minipage}{0.25\textwidth}
-      \vspace{-1cm}
-      \centering
-      \includegraphics[width=.89\textwidth]{logo.png}
-      \small Zusammenkunft aller Physik-Fachschaften
-\end{minipage}
+	\hspace{0.74\textwidth}
+	\begin{minipage}{0.25\textwidth}
+		\vspace{-1cm}
+		\centering
+		\includegraphics[width=.89\textwidth]{logo.png}
+		\small Zusammenkunft aller Physik-Fachschaften
+	\end{minipage}
+	
+	\begin{center}
+		\vspace{1.5cm}
+		\huge{Bericht zur digitalen ZaPF \\ Sommer 2021}
+		\vspace{1cm}
+	\end{center}
 
-\begin{center}
-      \vspace{1.5cm}
-      \huge{Bericht von der Online ZaPF in Rostock \\ Sommer 2021}
-      \vspace{1cm}
-\end{center}
+\subsection*{Einleitung}
 
-\input{bericht_OstseeZaPF}
+Die 84. Zusammenkunft aller Physik-Fachschaften (ZaPF), die Bundesfachschaftentagung der Physik, fand vom 12.05. bis 23.05. in digitaler Form statt. Die ZaPF versteht sich als meinungsäußerndes Gremium der Physikstudierenden und ermöglicht den Austausch zwischen verschiedenen Fachschaften im deutschsprachigen Raum. Bei dieser einmal im Semester stattfindenden Versammlung werden hochschulpolitische Themen und Aspekte der Fachschaftsarbeit diskutiert. Im Normalfall wird die ZaPF von der Physik-Fachschaft einer Hochschule organisiert und vor Ort ausgerichtet. In diesem Jahr waren die ausrichtenden Fachschaften die Physik-Fachschaften der Universität Rostock und der Universität Greifswald, aufgrund der geltenden Corona-Maßnahmen fand die ZaPF jedoch erneut rein digital statt.
+
+Insgesamt waren 40 Fachschaften mit ca. 150 angemeldeten Personen auf der ZaPF vertreten und es fanden über 40 Arbeitskreise zu verschiedenen Themen statt. Die Schwerpunkte dieser ZaPF lagen dabei vor allem auf folgenden Themen:
+Barrierefreies Studium, Überarbeitung der Musterrechtsverordnung, Open Source an Universitäten, Datenschutz, Novelle des Bayrischen Hochschulgesetzes und Unterstützung des Forderungskatalogs “50 Jahre BAföG - kein Grund zum Feiern”.
+
+\subsection*{Inhaltliche Arbeit}
+
+	\begin{itemize}
+		\item Resolution Barrierefreies Studium:\\
+Barrierefreiheit und Chancengleichheit ist ein wiederkehrendes Thema auf der ZaPF. Auf dieser Tagung wurde eine Resolution erarbeitet, die einerseits eine Aufklärung und Sensibilisierung, andererseits flexible Studienbedingungen fordert. Insbesondere bedeutet das für die Aufklärung, dass eine gut erreichbare und sichtbare Abteilung eingerichtet wird, die den Weg zu einer barrierefreien Hochschule vorantreibt. Wichtig ist auch die Möglichkeit einer Beratungsstelle für Mitarbeitende und Studierende mit
+Beeinträchtigungen oder chronischer Krankheit. sowie die Einrichtung einer ebenfalls barrierefreien Informationswebseite. Um die Flexibilität des Studiums zu verbessern, wird eine Möglichkeit des Teilzeitstudiums in allen Studiengängen gefordert. Ebenso ist die Anwesenheitspflicht abzuschaffen und die Abmeldung von Prüfungen soll vereinfacht werden. Zudem wird gefordert, Studiendokumente online und barrierefrei zugänglich zu machen und Lesefassungen zur Verfügung zu stellen.
+
+		\item Resolution zur Überarbeitung der MRVO:\\
+Die bevorstehende Evaluation der Musterrechtsverordnung, kurz MRVO, sowie des Akkreditierungssystems befürwortet die ZaPF. Dabei sollten aus Sicht der ZaPF trotzdem einige Punkte beachtet werden. Beispielsweise sollte die Besetzung von Gremien im Akkreditierungswesen sowie die Berufung von Gutachter*innen auf Vorschläge des studentischen Akkreditierungspools geschehen, da deren Mitglieder geschult und durch hochschulübergreifende Organisationen legitimiert sind. Ein weiterer Punkt ist auch die Berücksichtigung der Vielfalt von Studierenden. Es müssen die Belange von beispielsweise Studierenden mit Kind oder Behinderung in den Fokus der Akkreditierung rücken und folglich ein neues Kriterium geschaffen werden. Das komplette Ergebnis der Diskussion wurde in einer Resolution zu diesen Thema niedergeschrieben. In dieser wird auch auf momentane Ausnahmeregelungen während der Corona-Pandemie eingegangen.
+
+		\item Resolution Umdenken in den Hochschulen hin zu Open-Source Lösungen:\\
+Mit Blick auf die voranschreitende Digitalisierung der Hochschulen bringt die Nutzung von unabhängigen, quelloffenen Lösungen viele Vorteile. So lässt sich die langfristige Weiterentwicklung und Abwärtskompatibilität leichter gewährleisten und Anwendungen können besser an die individuellen Bedürfnisse angepasst werde. Offene Standards und Schnittstellen ermöglichen dabei eine flexiblere Nutzung und verringern somit Abhängigkeiten von Software mit zahlungspflichtigen Lizenzen. Außerdem werden durch die Ausbildung mit Open-Source-Software allgemeine Kompetenzen, wie das Anpassen an neue Programme, gefördert, sodass ein späterer Umstieg auf proprietäre Software gut möglich ist, ohne dass deren Monopolstellung zuvor weiter unterstützt wurde. Die ZaPF fordert ein Umdenken bei der Softwarenutzung hin zu Open-Source-Software und unterzeichnet die Resolution von “opensourcelms.de” dem Thema mit.
+
+		\item Resolution Datenschutz […] an Datenschutzbeauftragte; Resolution Datenschutz […] an Hochschulen:\\
+Die ZaPF fordert das Einhalten von Datenschutznormen und -gesetzen, gerade auch im Rahmen virtueller Vorlesungen. Sie schließt sich dabei unter anderem zwei Resolutionen der KaWuM\footnote{Die KaWuM ist die Konferenz aller Werkstofftechnischen und Materialwissenschaftlichen Studiengänge} zu dem Thema an und ermutigt Studierende, sich an die Datenschutzbeauftragten ihrer jeweiligen Universitäten zu wenden.
+
+		\item Bayrisches Hochschul-Innovationsgesetz:\\
+Seit der letzten Bundesfachschaftentagung hat die bayerische Staatsregierung einen Gesetzesentwurf für die Novelierung des Hochschulgesetzes vorgelegt. Die ZaPF stellte aufgrund des Entwurfes fest, dass sie eine Novellierung des bayerischen Hochschulgesetzes in der momentan vorliegenden Form entschieden ablehnt. Dies wird durch die fast identische Umsetzung des Eckpunktepapiers begründet, welches ebenfalls entschieden abgelehnt wird. Zusätzlich zu den bereits bestehenden Kritikpunkten wird (wurde während einer Diskussion) auch die geschaffene Bildungsbarriere und somit die Ungleichbehandlung von Studieninteressierten aus Nicht-EU-Staaten scharf kritisiert. Des Weiteren wird auch (wurde) die ersatzlose Streichung der momentan gesetzlich vorgeschriebenen Studienzuschüsse abgelehnt. Die erneute Diskussion wurde in einer weiteren Resolution zusammengefasst, mit der die ZaPF die Novellierung im Zuge des Gesetzesentwurfes zum bayerischen Hochschulinnovationsgesetzes entschieden ablehnt.
+
+		\item Resolution 50J-BAföG:\\
+Das Thema BAföG ist ein wiederkehrendes Thema auf der ZaPF. Nachdem auf vergangenen ZaPFen bereits ein Forderungskatalog zum BAföG ausgearbeitet und veröffentlicht wurde, fand auf dieser ZaPF vor allem eine Auseinandersetzung mit dem Bündnis “50 Jahre BAföG - kein Grund zu feiern” statt. Die Forderungen des Bündnisses umfassen dabei: Rückkehr zum Vollzuschuss, Wiedereinführung des Schüler*innen-BAföGs, Anpassung der Fördersätze, flexibler Wohnkostenzuschuss, Perspektiven zur familienunabhängigen Förderung, Erhöhung der Elternfreibeträge, Unabhängigkeit von Aufenthaltsstatus, Alter und Regelstudienzeit sowie eine Lernmaterialpauschale. Die ZaPF schließt sich dem Bündnis an, unterstützt dessen Forderungen und empfiehlt die Bewerbung der dazugehörigen Petition.
+
+		\item Positionspapier Mobilität:\\
+Die ZaPF fordert die Mobilität und Durchlässigkeit im Studium zu erhöhen und Leistungen anhand eines kompetenzorientierten Bewertungsverfahrens anzuerkennen. Auch sollen die Hochschulen gezielt Ansprechpartner ausweisen, um den Studierenden Hürden im Anerkennungsprozess und bei Fragen der Mobilität zu nehmen.
+
+		\item Positionspapier Einbindung von FDM-Inhalten in der Lehre:\\
+Die ZaPF fordert die Einbindung von FDM-Inhalten (Forschungsdatenmanagement) in die Lehre, um den Studierenden den Umgang und den Zugang mit den Forschungsdaten, auch im Zuge der fortschreitenden Digitalisierung, nahe zu bringen.
+
+		\item Initiativantrag 1: Unterzeichnung der Resolution zur Studiumsqualitätsverordnung:\\
+Die ZaPF unterzeichnet die Resolution zur Änderung der Studiumsqualitätsverordnung, welche vom Fachschaftsrat Physik der Universität Münster verfasst wurde. Sie spricht sich somit gegen eine teilweise Zweckbindung der Qualitätsverbesserungsmittel (QV-Mittel) auf nicht-studentisches Personal aus.
+
+	\end{itemize}
+
+Die ZaPF hat sich neben den hier vorgestellten Themen auch mit weiteren Themen beschäftigt, bei denen eine abschließende Positionierung aber noch aussteht. So ist beispielsweise Nachhaltigkeit an Universitäten ein ständig aktuelles Thema. Hier wurden auf vergangenen ZaPFen bereits verschiedene Ideen und Konzepte gesammelt, um Hochschulen nachhaltiger zu gestalten. Auch das Thema Studienreform ist ein wiederkehrendes Thema der ZaPF. Auf dieser ZaPF wurden mit Hilfe von Strukturdiagrammen Studiengangsvergleiche angestellt. Dieses Projekt soll zukünftig fortgeführt und vertieft werden. Wissenschaftskommunikation und Open Data sind ebenfalls Themen, die regelmäßig auf der ZaPF besprochen werden. Diese und andere Themen sollen auf zukünftigen Tagungen weiter behandelt werden.
+
+Die gesammelten Stellungnahmen der ZaPF können unter zapfev.de eingesehen werden.
+
+\subsection*{Feedback zur (digitalen) Umsetzung}
+
+Auch wenn ein Großteil der Teilnehmenden natürlich eine Präsenz-ZaPF gegenüber einer digitalen Veranstaltung bevorzugt hätte, fand die digitale Umsetzung großen Anklang. Insbesondere die digitale Welt in Workadventure, mit dem Nachbau der Institute, bot viele Möglichkeiten mit anderen Teilnehmenden auch außerhalb der Arbeitskreise in Kontakt zu kommen und sich zu vernetzen und wurde daher besonders gelobt. Dadurch, dass die Videokonferenzen zunächst nur durch die jeweiligen Räume auf der Karte zugänglich waren, mussten sich die Teilnehmenden wie bei einer Präsenztagung zunächst in den Räumlichkeiten zurecht finden. Viele Teilnehmende empfanden dieses Konzept als willkommene Abwechslung zu gewöhnlichen Videokonferenzen, in Einzelfällen traten aber Probleme auf, wenn Menschen unter Zeitdruck einen Arbeitskreis suchten und mit der Karte noch nicht vertraut waren. Leider funktionierte Workadeventure auf Mobiltelefonen nur schlecht, sodass die technischen Hürden dadurch erhöht wurden.
+
+Durch Offline-Challenges und kleine Spiele in der digitalen Welt wurde versucht die Teilnehmenden auch außerhalb des regulären Programms einzubinden und die soziale Atmosphäre der ZaPF einzufangen. Außerdem wurde neben den Arbeitskreisen auch ein digitales Rahmenprogramm organisiert, was unter anderem aus einer Laborführung, Vorstellungsvorträgen von vier An-Instituten, einem Vortrag über Albert Einstein in politischem Kontext und einer Aufführung der Schauvorlesung (einem Theaterstück mit physikalischen Experimenten) bestand.
+
+Zusammenfassend lässt sich festhalten, dass die OstseeZaPF 2021 sowohl inhaltlich, als auch im Hinblick auf die Fachschaftsvernetzung eine erfolgreiche Veranstaltung war. Auch wenn eine Präsenz-ZaPF nach Möglichkeit zu bevorzugen ist, fand das digitale Konzept viel Anklang und stellte eine gute Alternative dar.
+
+\subsection*{Kontakt und weitere ZaPFen}
+
+Fragen und Anregungen können gerne unter stapf@zapf.in an den Ständigen Ausschuss der Physik-Fachschaften (StAPF), das vertretende Gremium der ZaPF, geschickt werden.\\
+Weiterführende Informationen zur Arbeit und zu den Beschlüssen der ZaPF gibt es auf der Seite des ZaPF e.V. (zapfev.de) und im ZaPF-Wiki (zapf.wiki).
+
+In der Zeit vom 11. bis 14. November 2021 fand bereits eine weitere ZaPF statt, welche von der Fachschaft der Georg-August-Universität Göttingen ausgerichtet wurde. Die nächste ZaPF findet nun vom 03. bis 07. Juni 2022 statt und wird von der Fachschaft der Ruhr-Universität Bochum abgehalten.
+
 
 \end{document}
