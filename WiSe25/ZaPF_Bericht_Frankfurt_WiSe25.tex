@@ -1,0 +1,160 @@
+\documentclass[DIV=calc]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[draft, markup=underlined]{changes}
+\usepackage{csquotes}
+\usepackage{eurosym}
+
+\usepackage{ulem}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{paralist}
+%\usepackage{fixltx2e}
+%\usepackage{ellipsis}
+\usepackage[tracking=true]{microtype}
+
+\usepackage{lmodern}              % Ersatz fuer Computer Modern-Schriften
+%\usepackage{hfoldsty}
+
+%\usepackage{fourier}             % Schriftart
+\usepackage[scaled=0.81]{helvet}     % Schriftart
+
+\usepackage{url}
+%\usepackage{tocloft}             % Paket für Table of Contents
+\def\UrlBreaks{\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l%
+\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\0%
+\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\-}%
+
+\usepackage{xcolor}
+\definecolor{urlred}{HTML}{660000}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+
+%\usepackage{mdwlist}     % Änderung der Zeilenabstände bei itemize und enumerate
+%\usepackage[scale=0.8,colorspec=0.9]{draftwatermark} % Wasserzeichen ``Entwurf''
+%\SetWatermarkText{Vorbehaltlich\\redaktioneller\\Änderungen}
+
+\parindent 0pt                 % Absatzeinrücken verhindern
+\parskip 12pt                 % Absätze durch Lücke trennen
+
+\setlength{\textheight}{23cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\cfoot{}
+\lfoot{Zusammenkunft aller Physik-Fachschaften}
+\rfoot{www.zapfev.de\\stapf@zapf.in}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\newcommand{\gen}{*innen}
+\addto{\captionsngerman}{\renewcommand{\refname}{Quellen}}
+
+%%%% Mit-TeXen Kommandoset
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{xspace} 
+
+\newcommand{\replace}[2]{
+    \sout{\textcolor{blue}{#1}}~\textcolor{blue}{#2}}
+\newcommand{\delete}[1]{
+    \sout{\textcolor{red}{#1}}}
+\newcommand{\add}[1]{
+    \textcolor{blue}{#1}}
+
+\newif\ifcomments
+\commentsfalse
+%\commentstrue
+
+\newcommand{\red}[1]{{\ifcomments\color{red} {#1}\else{#1}\fi}\xspace}
+\newcommand{\blue}[1]{{\ifcomments\color{blue} {#1}\else{#1}\fi}\xspace}
+\newcommand{\green}[1]{{\ifcomments\color{green} {#1}\else{#1}\fi}\xspace}
+
+\newcommand{\repl}[2]{{\ifcomments{\color{red} \sout{#1}}{\color{blue} {\xspace #2}}\else{#2}\fi}}
+%\newcommand{\repl}[2]{{\color{red} \sout{#1}\xspace{\color{blue} {#2}}\else{#2}\fi}\xspace}
+
+\newcommand{\initcomment}[2]{%
+	\expandafter\newcommand\csname#1\endcsname{%
+		\def\thiscommentname{#1}%
+		\definecolor{col}{rgb}{#2}%
+		\def\thiscommentcolor{col}%
+}}
+
+% initcomment Name RGB-color
+%###############
+\initcomment{Philipp}{0, 0.5, 0}
+
+%\renewcommand{\comment}[1]{{\ifcomments{\color{red} {#1}}{}\fi}\xspace}
+
+\renewcommand{\comment}[2][\nobody]{
+	\ifdefined#1
+	{\ifcomments{#1 \expandafter\color{\thiscommentcolor}{\thiscommentname: #2}}{}\fi}\xspace
+	\else
+	{\ifcomments{\color{red} {#2}}{}\fi}\xspace
+	\fi
+}
+
+\newcommand{\zapf}{ZaPF\xspace}
+
+\let\oldgrqq=\grqq
+\def\grqq{\oldgrqq\xspace}
+
+\setlength{\parskip}{.6em}
+\setlength{\parindent}{0mm}
+
+%\usepackage{geometry}
+%\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=3.5cm}
+
+% \renewcommand{\familydefault}{\sfdefault}
+
+
+
+
+\begin{document}
+
+\hspace{0.87\textwidth}
+\begin{minipage}{120pt}
+	\vspace{-1.8cm}
+	\includegraphics[width=80pt]{logo.pdf}
+	\centering
+	\small Zusammenkunft aller Physik-Fachschaften
+\end{minipage}
+
+\begin{center}
+  \huge{Bericht von der ZaPF in Frankfurt\\
+Winter 2025/2026}\vspace{.25\baselineskip}\\
+  \normalsize
+\end{center}
+
+
+Die 93. Zusammenkunft aller (deutschsprachigen) Physik-Fachschaften, kurz ZaPF, fand vom
+31.10.2025 bis zum 03.11.2025 in Frankfurt statt. Etwa 188 Personen aus ungefähr 35 Fachschaften nahmen 
+teil. \\
+Die ZaPF dient vorrangig dem Austausch zwischen den Fachschaften und als meinungsäußerndes Gremium der Physikstudierenden. Sie findet einmal pro Semester statt. Dabei stehen hochschulpolitische Themen im Fokus, die unten näher erläutert werden.
+
+Insgesamt wurden während der ZaPF in Frankfurt ca. 30 Arbeitskreise und Workshops zu verschiedenen Themen angeboten.
+Teilweise gingen daraus Resolutionen und Positionspapiere hervor, die im Zwischen- und Endplenum der ZaPF beschlossen wurden. Beschlossene Resolutionen wurden im Anschluss an die ZaPF vom Ständigen Ausschuss aller Physikfachschaften (StAPF) verschickt und \href{https://zapfev.de/zapf/resolutionen/}{veröffentlicht}.
+
+\section*{Nachhaltigkeit}
+Auf der ZaPF in Frankfurt wurde sich erneut mit dem Thema Nachhaltigkeit beschäftigt. Dabei wurde sich über die Fortschritte der Hochschulen im Erreichen ihrer Nachhaltigkeitsziele ausgetauscht und über konkrete Maßnahmen der unterschiedlichen Hochschulen und Fachschaften gesprochen. 
+%Dabei haben sich zwei Diskussionen heraus gebildet. In einem Arbeitskreis stand der Austausch im Vordergrund, bei dem sich über die Fortschritte der Hochschulen im erreichen ihrer Nachhaltigkeitsziele ausgetauscht wurde. Es wurde dabei auch konkrete Maßnahmen der unterschiedlichen Hochschulen und Fachschaften vergleicht und besprochen. 
+Resultierend aus der Diskussion zur Verbesserung der Nachhaltigkeit spricht sich die ZaPF in einem Positionspapier für eine hochschulübergreifende Gerätebörse aus. So können alte oder nicht mehr benötigte Laborgeräte und technische Infrastruktur an Hochschulen weiter gegeben werden, die Bedarf dafür in der Forschung oder in der Lehre, wie zum Beispiel im Fortgeschrittenen Praktikum, haben. 
+
+\section*{Aktuelle politische Lage}
+
+Auch diese ZaPF wurde sich wieder mit der aktuellen politischen Lage und den daraus resultierenden Folgen für Studierende beschäftigt. \\
+Vor allem die anstehenden oder schon beschlossenen Kürzungen der Hochschulfinanzierungen durch die Länder sehen die Fachschaften als sehr kritisch. Es wurde sich darüber ausgetauscht, wie sich die (drohenden) Kürzungen bereits jetzt negativ auf die Studienbedingungen auswirken. Viele Fachschaften berichteten von weniger Stellen für studentische Hilfskräfte bei der Betreuung von Tutorien und Übungen. Außerdem sollen im akademischen Mittelbau Stellen eingespart werden und teilweise ganze Studiengänge und Institute an Hochschulen geschlossen werden.\\
+Auch in den Mensen spüren die Studierenden aller Hochschulen bereits jetzt die fehlende Unterstützung der Studierendenwerke durch die Länder. Kleinere Angebote, schlechtere Qualität und steigende Preise belasten die Studierenden zusätzlich.
+
+Ebenso wurde die weltpolitische Lage kritisch betrachtet. In einem Arbeitskreis zu sicherheitsrelevanter Forschung wurden sich verschiedene bundesweite Papiere mit Vorschlägen, wie Hochschulen mit militärischer Forschung und der Dual–Use Problematik umgehen können, angeschaut. Im Austausch berichteten Fachschaften davon, dass ihre Internationalen Studierenden – vor allem aus Russland, China und dem Iran – von enormen Einschränkungen betroffen sind. Aus Angst, dass diese Studierenden Forschungsergebnisse, welche für militärische Zwecke missbraucht werden könnten, an ihre Heimatländer weitergeben könnten, dürfen sie teilweise nicht mehr an Vorlesungen teilnehmen oder bekommen ihre Arbeitsverträge an den Hochschulen nicht mehr verlängert. Das kann zur Folge haben, dass sie ihr Visum verlieren und ihr Studium hier in Deutschland nicht mehr beenden dürfen.\\
+Die ZaPF spricht sich für offene, internationale und zivile Forschung aus, denn ein wichtiger Aspekt der Wissenschaft ist der Austausch – auch über Ländergrenzen hinweg – um gemeinschaftlich von dem Wissen aller profitieren zu können.
+
+\section*{Lehramtsstudium und Beamtentum}
+Im Lehramtsstudium gab es auch diesmal wieder einiges an Gesprächsbedarf. Es wurde sich mit dem Abbrechen des Lehramtsstudiums befasst. Einerseits war es wichtig zu verstehen, welche möglichen Gründe zu einem Abbruch des Studiums führen können und was diese über mögliche Bedürfnisse der Studierenden aussagt. Dabei stand auch im Fokus, dass im Lehramtsstudium oft das Gefühl der Alternativlosigkeit herrscht und welche Möglichkeiten es noch gibt, seine Fähigkeiten oder Interessen weiter zu nutzen, wenn sich die Wahl des Berufes der Lehrkraft als unpassend zeigt.\\
+Weitere Themen behandelten das Ende des Studiums bzw. die unmittelbare Zeit danach: Das Referendariat ist für viele Lehramtsstudierende mit viel Ungewissheit verbunden und das Ziel ist, dies an den jeweiligen Hochschulen der Teilnehmenden zu verbessern, in dem zum Beispiel Informations-Veranstaltungen zum Referendariat gehalten werden. Darüber hinaus wurde sich in der Zusammenarbeit mit Vertretungen der Psychologischen Fachschaften Konferenz über den Eintritt in das Beamtentum und die damit verbunden Ungewissheiten, welche Einflüsse psychischen Erkrankungen auf die Chancen einer Verbeamtung haben, ausgetauscht und Grundlagen für zukünftige Resolutionen zu diesem Thema gelegt.
+
+
+
+
+\end{document}
